@@ -94,7 +94,30 @@ LocalStorage 사용:
 
 ## 인증
 
-비밀번호 기반 간단한 인증 (코드: "soso1")
+비밀번호 기반 간단한 인증 (코드: "soso5")
+
+## Git 워크플로우
+
+### 브랜치 전략 (GitFlow)
+```
+main ◄────── 배포용 (안정 버전)
+  │
+  └── develop ◄── 개발 통합 브랜치
+        │
+        └── feature/* ◄── 기능 개발 브랜치
+```
+
+### 커밋 컨벤션 (Conventional Commits)
+- `feat:` 새로운 기능
+- `fix:` 버그 수정
+- `refactor:` 리팩토링
+- `docs:` 문서 수정
+- `style:` 코드 스타일 변경
+- `chore:` 기타 변경사항
+
+### GitHub 저장소
+- **Repository**: https://github.com/hunsoodev/running-challenge-app
+- **User**: hsjeong (hunsoodev@gmail.com)
 
 ---
 
@@ -120,6 +143,12 @@ LocalStorage 사용:
    - Pretendard 폰트 적용
    - 모바일 최적화 (터치, 크기)
    - 회색 분리감 제거
+
+5. **Git 워크플로우 구축**
+   - GitFlow 브랜치 전략 적용 (main/develop/feature)
+   - Conventional Commits 규칙 적용
+   - PR #1: feature/refactor-v1 → develop (머지 완료)
+   - PR #2: develop → main, release v1.0.0 (머지 완료)
 
 ### 🔜 다음 개선 계획
 
